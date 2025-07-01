@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C72695C32E1391E9008E7C9A /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = C72695C22E1391E9008E7C9A /* HotKey */; };
+		C72695C62E1391F8008E7C9A /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = C72695C52E1391F8008E7C9A /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C72695A52E138FD6008E7C9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72695C32E1391E9008E7C9A /* HotKey in Frameworks */,
+				C72695C62E1391F8008E7C9A /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = DropGo;
 			packageProductDependencies = (
+				C72695C22E1391E9008E7C9A /* HotKey */,
+				C72695C52E1391F8008E7C9A /* KeyboardShortcuts */,
 			);
 			productName = DropGo;
 			productReference = C72695962E138FD4008E7C9A /* DropGo.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = C726958D2E138FD4008E7C9A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C72695C12E1391E9008E7C9A /* XCRemoteSwiftPackageReference "HotKey" */,
+				C72695C42E1391F8008E7C9A /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C72695972E138FD4008E7C9A /* Products */;
 			projectDirPath = "";
@@ -551,6 +564,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C72695C12E1391E9008E7C9A /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C72695C42E1391F8008E7C9A /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C72695C22E1391E9008E7C9A /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C72695C12E1391E9008E7C9A /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+		C72695C52E1391F8008E7C9A /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C72695C42E1391F8008E7C9A /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C726958E2E138FD4008E7C9A /* Project object */;
 }
